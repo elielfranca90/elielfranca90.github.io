@@ -21,14 +21,62 @@
 </head>
 
 <body>
-    <h1>Testando CSS  <ion-icon name="flash"></ion-icon></h1>
-    
-    <!--ION Icons-->
-    <i class="devicon-csharp-plain"></i>
-    <i class="devicon-postgresql-plain"></i>
-    <i class="devicon-html5-plain"></i>
-    <i class="devicon-css3-plain"></i>
-    <i class="devicon-javascript-plain"></i>
+
+    <main id="container">
+        <aside id="bio-container">
+            <h2>Eliel França</h2>
+            <img id="bio-image" src="img/profile_pic.jpg" alt="Eliel França">
+            <p>Olá, meu nome é Eliel França e sou <span class="highlight">Desenvolvedor Backend C#</span></p>
+            <p id="welcome-text">Seja bem-vindo!</p>
+            <ul id="social-container">
+                <li><a href="#" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+            </ul>
+            <div id="email-container">
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:elielfranca90@gmail.com">elielfranca90@gmail.com</a>
+            </div>
+        </aside>
+        <section id="about-container">
+            <h1 id="name"></h1>
+            <p id="title">
+                <span id="highlight">
+                    Desenvolvedor Backend C#
+                </span>
+            </p>
+            <p id="description">
+                Desenvolvedor com sete anos de experiência. Especializado em
+                <span id="highlight">desenvolvimento beckend (C#)</span>, analista, e com <span id="highlight">significante
+                    domínio em SQL query</span>. Atualmente atuando como coordenador de sistemas.
+            </p>
+            <p id="description">Atuo tanto na análise de requisitos, na arquitetura, na coordenação e desenvolvimento de sistemas.</p>
+            <p id="description">Atualmente estudo desenvolvimento utilizando Docker, Cloud AWS e Github Actions.</p>
+            <a href="#" id="btn-projects">
+                <ion-icon name="share-social-outline"></ion-icon>Ver Projetos<span></span>
+            </a>
+            <h2 id="skills-section-title">Minhas Skills</h2>
+            <p id="description">Conheça as minhas habilidades</p>
+            <div id="skills-container">
+                <div id="skills-box">
+                    <p class="skills-title">Back-end</p>
+                    <i class="devicon-csharp-plain colored"></i>
+                </div>
+                <div id="skills-box">
+                    <p class="skills-title">Database</p>
+                    <i class="devicon-postgresql-plain colored"></i>
+                    <i class="devicon-sqlite-plain colored"></i>
+                </div>
+                <div id="skills-box">
+                    <p class="skills-title">Front-end</p>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-vuejs-plain colored"></i>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
