@@ -1,84 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliel Franca - Portfólio</title>
-
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700&display=swap"
-        rel="stylesheet">
-
-    <!--Dev icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-
-    <!--CSS do Projeto-->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Eliel França</title>
+  <!-- Adicione este link para o Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #222;
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 300px;
+      background-color: #1a1a1a;
+      padding: 20px;
+    }
+    .profile {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .profile h2 {
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
+    .profile p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .contact-info {
+      margin-top: 20px;
+    }
+    .contact-info a {
+      color: #4285f4;
+      text-decoration: none;
+    }
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+    .header {
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #3e8e41;
+    }
+    .skills-section {
+      margin-top: 30px;
+    }
+    .skills-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .skills-section p {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+    .skill-category {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+    .skill-category span {
+      font-weight: bold;
+      padding: 5px 10px;
+      background-color: #333;
+      border-radius: 5px;
+    }
+    .skill-category span i {
+      margin-right: 8px; /* Espaço entre o ícone e o texto */
+      color: #fff; /* Cor dos ícones */
+    }
+    .skill-icons {
+      display: flex;
+      gap: 15px;
+    }
+    .skill-icons i {
+      font-size: 2rem;
+      color: #fff;
+    }
+    .experience-section {
+      margin-top: 30px;
+    }
+    .experience-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .experience-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .experience-section li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .fa-brands.fa-aws {
+      margin-right: 8px; /* Adiciona espaço entre o ícone e o texto */
+      color: #FF9900; /* Cor típica da AWS */
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="profile">
+        <img src="img/profile_pic.png" alt="Perfil">    
+        <h2>Eliel (Oliveira) França</h2>
+        <p>(He/Him)
+           Gerente de Engenharia @Grupo IMendes | desenvolvimento de software | .net | cloud | inovação | gestão de pessoas | em constante aprendizado | ... |</p>
+        <p>Seja bem-vindo!</p>
+        <div class="contact-info">
+          <a href="https://www.linkedin.com/in/eliel-franca/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>elieilfranca90@gmail.com</p>
+      </div>
+    </div>
 
-    <main id="container">
-        <aside id="bio-container">
-            <h2>Eliel França</h2>
-            <img id="bio-image" src="img/profile_pic.jpg" alt="Eliel França">
-            <p>Olá, meu nome é Eliel França e sou <span class="highlight">Desenvolvedor Backend C#</span></p>
-            <p id="welcome-text">Seja bem-vindo!</p>
-            <ul id="social-container">
-                <li><a href="#" target="_blank">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a></li>
-            </ul>
-            <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon>
-                <a href="mailto:elielfranca90@gmail.com">elielfranca90@gmail.com</a>
-            </div>
-        </aside>
-        <section id="about-container">
-            <h1 id="name"></h1>
-            <p id="title">
-                <span id="highlight">
-                    Desenvolvedor Backend C#
-                </span>
-            </p>
-            <p id="description">
-                Desenvolvedor com sete anos de experiência. Especializado em
-                <span id="highlight">desenvolvimento beckend (C#)</span>, analista, e com <span id="highlight">significante
-                    domínio em SQL query</span>. Atualmente atuando como coordenador de sistemas.
-            </p>
-            <p id="description">Atuo tanto na análise de requisitos, na arquitetura, na coordenação e desenvolvimento de sistemas.</p>
-            <p id="description">Atualmente estudo desenvolvimento utilizando Docker, Cloud AWS e Github Actions.</p>
-            <a href="#" id="btn-projects">
-                <ion-icon name="share-social-outline"></ion-icon>Ver Projetos<span></span>
-            </a>
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            <p id="description">Conheça as minhas habilidades</p>
-            <div id="skills-container">
-                <div id="skills-box">
-                    <p class="skills-title">Back-end</p>
-                    <i class="devicon-csharp-plain colored"></i>
-                </div>
-                <div id="skills-box">
-                    <p class="skills-title">Database</p>
-                    <i class="devicon-postgresql-plain colored"></i>
-                    <i class="devicon-sqlite-plain colored"></i>
-                </div>
-                <div id="skills-box">
-                    <p class="skills-title">Front-end</p>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-vuejs-plain colored"></i>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <h1>Engenheiro de Software</h1>
+        <p>Engenheiro de software com mais de dez anos de experiência. Expertise em Desenvolvimento Back-end (C#), Análise de Sistemas, domínio significativo em consultas SQL, gestão de pessoas e de projetos ágeis. Atualmente atuando como gerente de engenharia. Também interessado em inovação, Dados, desenvolvimento com Python, IA, construção e gestão de equipes, desenvolvimento de pessoas e Computação em Nuvem.</p>
+        <a href="https://github.com/elielfranca90" class="button">Ver Projetos</a>
+      </div>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <!-- Skills Section -->
+      <div class="skills-section">
+        <h2>Minhas Skills</h2>
+        <p>Conheça as minhas habilidades</p>
+        <div class="skill-category">
+          <span><i class="fas fa-code"></i> Backend (C#)</span>
+          <span><i class="fas fa-code"></i> Python</span>
+          <span><i class="fa-brands fa-aws"></i> Cloud (AWS)</span>
+          <span><i class="fas fa-database"></i> Database</span>
+          <span><i class="fas fa-users"></i> Gestão de pessoas</span>
+          <span><i class="fas fa-tasks"></i> Gestão de ágil</span>
+        </div>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="experience-section">
+        <h2>Experiência</h2>
+        <ul>
+          <li><strong>- C# Avançado:</strong> Profundo conhecimento em programação C#, incluindo design patterns, orientação a objetos e desenvolvimento de APIs RESTful.<br><br></li>
+          <li><strong>- AWS Cloud Avançado:</strong> Experiência avançada no uso da AWS, com certificação AWS Cloud Practitioner. Trabalho com serviços como EC2, S3, Lambda e RDS para criar soluções escaláveis e resilientes.<br><br></li>
+          <li><strong>- Python Intermediário (Estudando):</strong> Estou aprimorando minhas habilidades em Python, focando em frameworks como Django e Flask para desenvolvimento web. Também estudo bibliotecas de machine learning como TensorFlow e Scikit-learn.<br><br></li>
+          <li><strong>- Criação de Agentes de IA (Estudando):</strong> Exploro o campo emergente de inteligência artificial, estudando técnicas de aprendizado de máquina e criação de agentes IA para resolver problemas complexos.<br></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
